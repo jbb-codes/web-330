@@ -5,7 +5,7 @@
 
   Author: Jarren Bess
   Date: Oct 28, 2025
-  Filename:
+  Filename: script.js
 */
 
 "use strict";
