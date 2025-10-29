@@ -1,0 +1,36 @@
+/*
+  Pragmatic JavaScript
+  Chapter 1
+  Programming Assignment
+
+  Author: Jarren Bess
+  Date: Oct 28, 2025
+  Filename: styles.css
+*/
+
+/* Your CSS goes here */
+#mainContainer {
+  margin: 10vw;
+  text-align: center;
+}
+
+#characterOutput {
+  margin: 20px;
+}
+
+.charRow {
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+
+#characterOutput{
+  display: flex;
+  justify-content: space-evenly
+}
+
+.charInfo{
+  font-size: 3rem;
+}
