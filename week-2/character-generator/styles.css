@@ -9,6 +9,10 @@
 */
 
 /* Your CSS goes here */
+body {
+  background-color: gray;
+}
+
 #mainContainer {
   margin: 10vw;
   text-align: center;
@@ -19,18 +23,17 @@
 }
 
 .charRow {
-  /* border: 1px solid black; */
   display: flex;
   gap: 40px;
   justify-content: center;
   padding: 20px;
 }
 
-#characterOutput{
+#characterOutput {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
-.charInfo{
-  font-size: 3rem;
+.charInfo {
+  font-size: 2rem;
 }
