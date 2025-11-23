@@ -1,0 +1,84 @@
+/*
+  Pragmatic JavaScript
+  Chapter 2
+  Programming Assignment
+
+  Author: Jarren Bess
+  Date: Nov 20, 2025
+  Filename: styles.css
+  Details: Generated design with AI then tried to implement myself
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2e2e2e 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+}
+
+#reservationForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input {
+  border: 2px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="submit"] {
+  background: linear-gradient(135deg, #c9a961 0%, #b8923f 100%);
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+#message {
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  padding: 12px;
+  min-width: 162px;
+}
+
+#message.success {
+  border-left: 4px solid #4caf50;
+  background-color: #c8e6c9;
+}
+
+#message.error {
+  border-left: 4px solid #ff4c4c;
+  background-color: #fcc;
+}
