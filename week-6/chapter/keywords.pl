@@ -1,4 +1,4 @@
-#!"D:\xampp\perl\bin\perl.exe"
+#!/usr/bin/perl
 
 #Confirm that perl is located in the /usr/bin/perl folder
 #of your Web server
@@ -12,7 +12,7 @@ my $cgi_object = new CGI();
 # Printout out the header
 print $cgi_object->header();
 
-# Retrieve the value of the suggest parameter 
+# Retrieve the value of the suggest parameter
 my $input = $cgi_object->param('suggest');
 
 # This is the hashtable holding a list of the SBlogger keywords
@@ -56,7 +56,7 @@ my @keys = (
     { key => "Football" },
     { key => "Giants Football" },
     { key => "Giants Baseball" },
-    { key => "Golf" },    
+    { key => "Golf" },
     { key => "Grizzlies" },
     { key => "Hawks" },
     { key => "Heat" },
@@ -82,7 +82,7 @@ my @keys = (
     { key => "NFL" },
     { key => "Nuggets" },
     { key => "Orioles" },
-    { key => "Olympics" },    
+    { key => "Olympics" },
     { key => "Pacers" },
     { key => "Packers" },
     { key => "Padres" },
@@ -91,7 +91,7 @@ my @keys = (
     { key => "Phillies" },
     { key => "Pirates" },
     { key => "Pistons" },
-    { key => "Premier League" },    
+    { key => "Premier League" },
     { key => "Raiders" },
     { key => "Rams" },
     { key => "Raptors" },
@@ -119,7 +119,7 @@ my @keys = (
     { key => "White Sox" },
     { key => "Wizards" },
     { key => "Yankees" }
-); 
+);
 
 # Keep track of the number of hits using the count variable
 my $count = 0;
