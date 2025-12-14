@@ -1,0 +1,47 @@
+/*
+  Pragmatic JavaScript
+  Chapter 4
+  Programming Assignment
+
+  Author: Jarren Bess
+  Date: Dec 13, 2025
+  Filename: styles.css
+*/
+
+/* Add your styles here */
+body {
+  justify-items: center;
+  box-sizing: border-box;
+}
+
+.form-container {
+  border: 5px solid black;
+  border-radius: 40px;
+  min-width: 300px;
+  max-width: 500px;
+  justify-items: center;
+  margin: 5%;
+  padding: 1vh;
+}
+
+#movie-form {
+  margin: 5%;
+}
+
+#movie-info {
+  margin: 2vh;
+  justify-items: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5%;
+}
+
+#error-message {
+  font-weight: bold;
+  font-size: 16pt;
+  color: rgba(255, 0, 0, 1);
+}
+
+.is-hidden {
+  display: none;
+}
