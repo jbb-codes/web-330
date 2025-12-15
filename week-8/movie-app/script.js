@@ -47,16 +47,17 @@ function fetchMovie(title) {
 async function displayMovie(e) {
   try {
     e.preventDefault();
-    clearFormContainer();
+    hideAndClearMovieInfo();
     let movie = await fetchMovie(titleInput.value);
 
     // Used copilot to figure out how to update movie properties with forEach
-    // it suggested using a properties array and showed forEach implementation
-    let props = ["title", "director", "releaseYear", "synopsis"];
+    // it suggested using a properties array and showed forEach implementation;
+    // I later thought to use Object.keys instead of hard coding a properties
+    // array.
+    let props = Object.keys(movies[0]);
     movieInfoChildren.forEach((el, i) => {
       el.textContent = movie[props[i]];
     });
-
     movieInfo.classList.remove("is-hidden");
   } catch (error) {
     console.error(error);
@@ -64,7 +65,7 @@ async function displayMovie(e) {
   }
 }
 
-function clearFormContainer() {
+function hideAndClearMovieInfo() {
   errorMessage.textContent = "";
   movieInfoChildren.forEach((el) => (el.textContent = ""));
   movieInfo.classList.add("is-hidden");
